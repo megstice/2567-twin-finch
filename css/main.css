@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-/*Exercise IIII*/
+/*A-V Twin Finch*/
 
 
 /*--------------------------------------------------------------
@@ -29,6 +29,9 @@
 	5.2 - Colors
 	5.3 - Alignments
 --------------------------------------------------------------*/
+html {
+	font-size: 12pt;
+}
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -36,19 +39,62 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.bold-txt {
+	font-weight: 700;
+}
+
+.wrapper{
 	width: 70%;
 	margin: 0 auto;
 }
 
+.col-7-10 {
+	margin: 0 auto;
+}
+
 .row {
-	
+	overflow: auto;
 }
 
 .row:after {
 	content:"";
 	display: table;
 	clear: both;
+}
+
+.col-10-12 span {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+
+/* ------- 1.4 FORMS ------- */
+
+label {
+	display: none;
+}
+
+placeholder {
+	text-transform: uppercase;
+}
+
+input {
+	margin-bottom: 20px;
+	margin-right: 10px;
 }
 
 [class*='col-'] {
@@ -149,50 +195,70 @@
 	width: 8.33%;
 }
 
-.bg {
-	height: 200px;
-	background-color: olive;
+.col-10-12 {
+	width: 83.33%;
+	float: none;
+	margin: 0 auto;
 }
 
+.bg-color form, .bg-color p {
+	display: inline-block;
+}
+
+footer > ul {
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+	
+.col-1-2 input, .col-1-2 textarea {	
+	width: 100%;
+}
+
+.col-1-2 form {
+	padding-left: 100px;
+}
+	
 img {
 	max-width: 100%;
 }
 
-@media screen and (max-width: 760px) {
-.col-1-5, .col-1-8, .col-1-10 {
-	width: 50%;
+li {
+	display: inline-block;
 }
 
-.col-1-5:last-child, .col-1-7:last-child, .col-1-11 {
-	width: 100%;
+ul {
+	text-align: right;
 }
 
-.col-1-6, .col-1-9 {
-	width: 33.33%;
-}
-
-.col-1-7:first-child, .col-1-7:nth-child(3), .col-1-7:nth-child(5) {
-	width: 28.571%;
-}
-
-.col-1-7:nth-child(2), .col-1-7:nth-child(4), .col-1-7:nth-child(6) {
-	width: 71.429%;
-}
-
-.col-1-12 {
-	width: 25%;
-}
-
-.col-1-5:nth-child(2), .col-1-5:nth-child(4), .col-1-6:nth-child(3), .col-1-7:nth-child(2), .col-1-7:nth-child(4), .col-1-7:nth-child(6), .col-1-8:nth-child(2), .col-1-8:nth-child(4), .col-1-8:nth-child(6), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(2), .col-1-10:nth-child(4), .col-1-10:nth-child(6), .col-1-10:nth-child(8), .col-1-11, .col-1-12:nth-child(4), .col-1-12:nth-child(8) {
-	padding-right: 0;
-}
-
+#rating-bar p, .text-center, .col-10-12 {
+	text-align: center;
 }
 
 @media screen and (max-width: 480px) {
+html {
+	font-size: 14px;
+}
 	
-.col-1-4, .col-1-8 {
-	width: 50%;
+#nav-logo, ul {
+	float: none;
+	padding: 0;
+}
+
+nav, #nav-logo, ul, #girl-coffee-img {
+	text-align: center;
+}
+
+.bg-color ul {
+	text-align: center;
+}
+
+.col-1-2 form {
+	padding-left: 20px;
+}
+	
+.col-1-4, .col-1-8, .col-1-2 {
+	width: 100%;
 }
 
 .col-1-4:nth-child(2), .col-1-6:nth-child(3), .col-1-7:nth-child(2), .col-1-7:nth-child(4), .col-1-7:nth-child(6), .col-1-8:nth-child(2), .col-1-8:nth-child(4), .col-1-8:nth-child(6), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(2), .col-1-10:nth-child(4), .col-1-10:nth-child(6), .col-1-10:nth-child(8), .col-1-12:nth-child(3), .col-1-12:nth-child(6), .col-1-12:nth-child(9) {
