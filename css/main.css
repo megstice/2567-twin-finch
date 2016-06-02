@@ -44,7 +44,30 @@ body {
 }
 
 h2 {
+	color: #000;
+}
+
+h3 {
+	color: #7d5a47;
+}
+
+h2, h3 {
 	text-transform: uppercase;
+}
+
+figure ~ .buy-now-b, #submit-b-contact {
+	color: #7d5a47;
+	border: solid #7d5a47;
+}
+
+figure ~ .buy-now-b:hover, #submit-b-contact:hover {
+	color: #fff;
+	background-color: #7d5a47;
+}
+
+#submit-b-newsletter:hover {
+	color: #7d5a47;
+	background-color: #fff;
 }
 
 .bold-txt {
@@ -76,11 +99,68 @@ h2 {
 	font-weight: 700;
 }
 
+/* ------- 2.0 NAV ITEMS ------- */
+
 a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #000;
 }
+
+li:hover, #how-to-brew-b:hover, .col-10-12 .buy-now-b:hover {
+	background-color: #7d5a47;
+}
+
+.col-1-2 li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter {
+	border: solid #fff;
+}
+
+#cover-photo, a, .bg-color-brown, #rating-bar {
+	color: #fff;
+}
+
+li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter, #submit-b-contact {
+	padding: 10px 20px;
+}
+
+#nav-logo {
+	margin-top: 10px;
+}
+
+.col-10-12 p {
+	margin-bottom: 50px;
+}
+
+#how-to-brew-b {
+	margin-right: 20px;
+}
+
+li {
+	display: inline-block;
+}
+
+ul {
+	text-align: right;
+}
+
+#cover-photo {
+	background: url(../img/cover-photo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	padding: 0 75px 100px 75px;
+}
+
+.bg-color-brown {
+	background-color: #7d5a47;
+	padding: 20px;
+}
+
+#rating-bar {
+	background-color: #000;
+	padding: 5px 0;
+}
+
 
 /* ------- 1.4 FORMS ------- */
 
@@ -97,6 +177,97 @@ input {
 	margin-right: 10px;
 }
 
+input, textarea {
+	border-color: #7d5a47;
+	outline: none;
+	color: #7d5a47;
+}
+
+textarea {
+	margin-bottom: 40px;
+}
+
+.bg-color-brown form >input {
+	margin-left: 20px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #000;
+}
+
+input::-webkit-input-placeholder {
+color: #7d5a47
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #7d5a47 !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #7d5a47 !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #7d5a47 !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: #7d5a47 !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: #7d5a47 !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #7d5a47 !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: #7d5a47 !important;  
+}
+
+input[type="email"]::-webkit-input-placeholder {
+color: #7d5a47 !important;
+}
+ 
+input[type="email"]:-moz-placeholder { /* Firefox 18- */
+color: #7d5a47 !important;  
+}
+ 
+input[type="email"]::-moz-placeholder {  /* Firefox 19+ */
+color: #7d5a47 !important;  
+}
+ 
+input[type="email"]:-ms-input-placeholder {  
+color: #7d5a47 !important;  
+}
+
+/* ------- 3.0 CONTENT ------- */
+
+#coffeebean-div {
+	background: url(../img/coffee-beans.png) no-repeat ;	
+	background-size: cover;
+	height: 300px;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+#arrow-up {
+	width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  	border-bottom: 20px solid black;
+	position: relative;
+	top: 0;
+	left: 810px;
+}
+
+
 [class*='col-'] {
 	float: left;
 	padding-right: 20px;
@@ -104,7 +275,7 @@ input {
 }
 
 [class*='col-']:last-of-type {
-	padding-right: 0;
+	padding-right: 20px;
 }
 
 .col-1-1 {
@@ -199,9 +370,10 @@ input {
 	width: 83.33%;
 	float: none;
 	margin: 0 auto;
+	height: 200px;
 }
 
-.bg-color form, .bg-color p {
+.bg-color-brown form, .bg-color-brown p {
 	display: inline-block;
 }
 
@@ -221,14 +393,6 @@ footer > ul {
 	
 img {
 	max-width: 100%;
-}
-
-li {
-	display: inline-block;
-}
-
-ul {
-	text-align: right;
 }
 
 #rating-bar p, .text-center, .col-10-12 {
