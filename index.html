@@ -6,6 +6,21 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {  
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(45.5425909, -122.6765),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
 <title>A-V Twin Finch</title>
 </head>
 
@@ -157,9 +172,12 @@
         <a id="submit-b-contact" href="#">Submit</a>
       </form>
     </div>
-    <div class="col-1-2" id="map-img">
-      <p>You can buy from us directly at our Portland storefront located at 457 NW Market Street. </p>
-    </div>
+    <div id="relative-div"  class="col-1-2" >
+        <div id="map"> </div>
+        <div id="absolute-div">
+            <p>You can buy from us directly at our Portland storefront located at 457 NW Market Street. </p>
+        </div>  
+    </div>  
   </div>
 </section>
 <!-- FOOTER SECTION -->
