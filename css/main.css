@@ -29,6 +29,9 @@
 	5.2 - Colors
 	5.3 - Alignments
 --------------------------------------------------------------*/
+
+/*-------- 1.0 Typography --------*/
+
 html {
 	font-size: 12pt;
 }
@@ -47,7 +50,7 @@ h2 {
 	color: #000;
 }
 
-h3 {
+#rating-bar p > a:hover, h3 {
 	color: #7d5a47;
 }
 
@@ -55,9 +58,31 @@ h2, h3 {
 	text-transform: uppercase;
 }
 
+
+blockquote {
+	font-size: 1.2rem;
+}
+
+#evening-oak-header {
+	font-size: 1.7rem;
+}
+
+blockquote footer a:hover, #evening-oak-header {
+	color: #000;
+}
+
+#roasts {
+	font-size: 2rem;
+}
+
 figure ~ .buy-now-b, #submit-b-contact {
 	color: #7d5a47;
 	border: solid #7d5a47;
+}
+
+figure ~ .buy-now-b {
+	margin-top: 50px;
+	display: inline-block;
 }
 
 figure ~ .buy-now-b:hover, #submit-b-contact:hover {
@@ -74,12 +99,14 @@ figure ~ .buy-now-b:hover, #submit-b-contact:hover {
 	font-weight: 700;
 }
 
-.wrapper{
-	width: 70%;
-	margin: 0 auto;
+
+#how-to-brew-b {
+	margin-right: 20px;
 }
 
-.col-7-10 {
+
+.wrapper{
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -98,69 +125,6 @@ figure ~ .buy-now-b:hover, #submit-b-contact:hover {
 	font-size: 1.5rem;
 	font-weight: 700;
 }
-
-/* ------- 2.0 NAV ITEMS ------- */
-
-a {
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-li:hover, #how-to-brew-b:hover, .col-10-12 .buy-now-b:hover {
-	background-color: #7d5a47;
-}
-
-.col-1-2 li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter {
-	border: solid #fff;
-}
-
-#cover-photo, a, .bg-color-brown, #rating-bar {
-	color: #fff;
-}
-
-li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter, #submit-b-contact {
-	padding: 10px 20px;
-}
-
-#nav-logo {
-	margin-top: 10px;
-}
-
-.col-10-12 p {
-	margin-bottom: 50px;
-}
-
-#how-to-brew-b {
-	margin-right: 20px;
-}
-
-li {
-	display: inline-block;
-}
-
-ul {
-	text-align: right;
-}
-
-#cover-photo {
-	background: url(../img/cover-photo.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	padding: 0 75px 100px 75px;
-}
-
-.bg-color-brown {
-	background-color: #7d5a47;
-	padding: 20px;
-}
-
-#rating-bar {
-	background-color: #000;
-	padding: 5px 0;
-}
-
 
 /* ------- 1.4 FORMS ------- */
 
@@ -187,7 +151,7 @@ textarea {
 	margin-bottom: 40px;
 }
 
-.bg-color-brown form >input {
+.bg-color-brown form > input {
 	margin-left: 20px;
 }
 
@@ -243,16 +207,61 @@ input[type="email"]:-ms-input-placeholder {
 color: #7d5a47 !important;  
 }
 
+/* ------- 2.0 NAV ITEMS ------- */
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+li:hover, #how-to-brew-b:hover, .col-10-12 .buy-now-b:hover {
+	background-color: #7d5a47;
+}
+
+.col-1-2 li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter {
+	border: solid #fff;
+}
+
+#cover-photo, a, .bg-color-brown, #rating-bar {
+	color: #fff;
+}
+
+li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter, #submit-b-contact {
+	padding: 10px 20px;
+}
+
+#nav-logo {
+	margin-top: 10px;
+}
+
+.col-10-12 p {
+	margin-bottom: 50px;
+}
+
+li {
+	display: inline-block;
+}
+
+ul {
+	text-align: right;
+}
+
+.bg-color-brown {
+	background-color: #7d5a47;
+	padding: 20px;
+}
+
+#rating-bar {
+	background-color: #000;
+	padding: 5px 0;
+}
+
 /* ------- 3.0 CONTENT ------- */
 
 #coffeebean-div {
 	background: url(../img/coffee-beans.png) no-repeat ;	
 	background-size: cover;
 	height: 300px;
-	margin: 0;
-}
-
-figure {
 	margin: 0;
 }
 
@@ -267,6 +276,57 @@ figure {
 	left: 810px;
 }
 
+#relative-div {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#absolute-div {
+	position: absolute;
+	bottom: 300px;
+    left: 100px;
+}
+
+
+/* ------- 4.0 MEDIA ------- */
+
+#map {
+	height: 400px;
+	margin-bottom: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+#cover-photo {
+	background: url(../img/cover-photo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	padding: 0 75px 100px 75px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* --------- 5.0 Utilities --------- */
+
+#about, #contact {
+	margin-top: 40px;
+}
+
+.margin-top {
+	margin-top: 150px;
+}
+
+#newsletter-margin {
+	margin-left: 130px;
+}
 
 [class*='col-'] {
 	float: left;
@@ -302,75 +362,12 @@ figure {
 	width: 75%;
 }
 
-.col-1-5 {
-	width: 20%;
-}
-
-.col-1-6 {
-	width: 16.66%;
-}
-
-.col-1-7 {
-	width: 14.286%;
-}
-
-.col-3-7 {
-	width: 42.857%;
-}
-
-.col-4-7 {
-	width: 57.143%;
-}
-
-.col-1-8 {
-	width: 12.5%;
-}
-
-.col-1-9 {
-	width: 11.11%;
-}
-
-.col-4-9 {
-	width: 44.44%;
-}
-
-.col-5-9 {
-	width: 55.56%;
-}
-
-.col-1-10 {
-	width: 10%;
-}
-
-.col-3-10 {
-	width: 30%;
-}
-
-.col-7-10 {
-	width: 70%;
-}
-
-.col-1-11 {
-	width: 9.09%;
-}
-
-.col-5-11 {
-	width: 45.45%;
-}
-
-.col-6-11 {
-	width: 54.54%;
-}
-
-.col-1-12 {
-	width: 8.33%;
-}
-
 .col-10-12 {
 	width: 83.33%;
 	float: none;
 	margin: 0 auto;
 	height: 200px;
+	margin-top: 75px;
 }
 
 .bg-color-brown form, .bg-color-brown p {
@@ -391,13 +388,13 @@ footer > ul {
 	padding-left: 100px;
 }
 	
-img {
-	max-width: 100%;
-}
-
 #rating-bar p, .text-center, .col-10-12 {
 	text-align: center;
 }
+
+
+
+
 
 @media screen and (max-width: 480px) {
 html {
