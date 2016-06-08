@@ -105,6 +105,11 @@ figure ~ .buy-now-b:hover, #submit-b-contact:hover {
 	margin-right: 20px;
 }
 
+.col-10-12 span {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
 
 .wrapper{
 	width: 70%;
@@ -119,12 +124,6 @@ figure ~ .buy-now-b:hover, #submit-b-contact:hover {
 	content:"";
 	display: table;
 	clear: both;
-}
-
-.col-10-12 span {
-	text-transform: uppercase;
-	font-size: 1.5rem;
-	font-weight: 700;
 }
 
 /* ------- 1.4 FORMS ------- */
@@ -296,6 +295,10 @@ ul {
 
 /* ------- 4.0 MEDIA ------- */
 
+img {
+	max-width: 100%;
+}
+
 #map {
 	height: 400px;
 	margin-bottom: 0;
@@ -312,10 +315,6 @@ figure {
     -o-background-size: cover;
     background-size: cover;
 	padding: 0 75px 100px 75px;
-}
-
-img {
-	max-width: 100%;
 }
 
 #fb-icon {
@@ -416,23 +415,19 @@ img {
 	display: inline-block;
 }
 
+footer li {
+	padding: 0;
+}
+
 footer > ul {
 	text-align: left;
 	padding-top: 25px;
 	padding-bottom: 30px;
 }
 
-footer li {
-	padding: 0;
-}
-	
 #rating-bar p, .text-center, .col-10-12 {
 	text-align: center;
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
 html {
