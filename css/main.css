@@ -58,9 +58,13 @@ h2, h3 {
 	text-transform: uppercase;
 }
 
+.bold-txt {
+	font-weight: 700;
+}
 
 blockquote {
 	font-size: 1.2rem;
+	text-align: center;
 }
 
 #evening-oak-header {
@@ -74,6 +78,8 @@ blockquote footer a:hover, #evening-oak-header {
 #roasts {
 	font-size: 2rem;
 }
+
+/*-------- 1.3 Buttons --------*/
 
 figure ~ .buy-now-b, #submit-b-contact {
 	color: #7d5a47;
@@ -94,11 +100,6 @@ figure ~ .buy-now-b:hover, #submit-b-contact:hover {
 	color: #7d5a47;
 	background-color: #fff;
 }
-
-.bold-txt {
-	font-weight: 700;
-}
-
 
 #how-to-brew-b {
 	margin-right: 20px;
@@ -139,6 +140,14 @@ placeholder {
 input {
 	margin-bottom: 20px;
 	margin-right: 10px;
+}
+
+.col-1-2 input, .col-1-2 textarea {	
+	width: 85%;
+}
+
+.col-1-2 form {
+	padding-left: 100px;
 }
 
 input, textarea {
@@ -234,10 +243,6 @@ li, #how-to-brew-b, .buy-now-b, #submit-b-newsletter, #submit-b-contact {
 	margin-top: 10px;
 }
 
-.col-10-12 p {
-	margin-bottom: 50px;
-}
-
 li {
 	display: inline-block;
 }
@@ -273,7 +278,7 @@ ul {
   	border-bottom: 20px solid black;
 	position: relative;
 	top: 0;
-	left: 810px;
+	left: 825px;
 }
 
 #relative-div {
@@ -313,6 +318,39 @@ img {
 	max-width: 100%;
 }
 
+#fb-icon {
+	background-image: url(../img/sprite-fb.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lnkdin-icon {
+	background-image: url(../img/sprite-lnkdin.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#twitter-icon {
+	background-image: url(../img/sprite-twitter.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fb-icon, #twitter-icon, #lnkdin-icon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+#fb-icon:hover, #twitter-icon:hover, #lnkdin-icon:hover {
+	background-position: 0 -30px;	
+}
 
 /* --------- 5.0 Utilities --------- */
 
@@ -326,6 +364,10 @@ img {
 
 #newsletter-margin {
 	margin-left: 130px;
+}
+
+.col-10-12 p {
+	margin-bottom: 50px;
 }
 
 [class*='col-'] {
@@ -379,13 +421,9 @@ footer > ul {
 	padding-top: 25px;
 	padding-bottom: 30px;
 }
-	
-.col-1-2 input, .col-1-2 textarea {	
-	width: 100%;
-}
 
-.col-1-2 form {
-	padding-left: 100px;
+footer li {
+	padding: 0;
 }
 	
 #rating-bar p, .text-center, .col-10-12 {
@@ -396,9 +434,14 @@ footer > ul {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 html {
-	font-size: 14px;
+	font-size: 16px;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
 }
 	
 #nav-logo, ul {
@@ -406,18 +449,52 @@ html {
 	padding: 0;
 }
 
+#about, #about-p {
+	margin-left: 20px;
+}
+
+#newsletter-margin {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+#submit-b-contact {
+	display: block;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
 nav, #nav-logo, ul, #girl-coffee-img {
 	text-align: center;
 }
 
-.bg-color ul {
+.bg-color-brown ul {
 	text-align: center;
+}
+
+.bg-color-brown form > input {
+	margin-left: 0;
+}
+
+#arrow-up {
+	top: 0;
+	left: 180px;
 }
 
 .col-1-2 form {
 	padding-left: 20px;
 }
-	
+
+.col-1-2 input, .col-1-2 textarea {	
+	width: 100%;
+}
+
+.col-1-2 li {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
 .col-1-4, .col-1-8, .col-1-2 {
 	width: 100%;
 }
@@ -428,6 +505,26 @@ nav, #nav-logo, ul, #girl-coffee-img {
 
 .col-3-4, .col-1-10 {
 	width: 50%;
+}
+
+.col-10-12 {
+	width: 90%;
+	padding-bottom: 20px;
+	margin: 0;
+	height: inherit;
+}
+
+#how-to-brew-b, .col-10-12 .buy-now-b {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#how-to-brew-b {
+	margin-right: 0;
+}
+
+.col-10-12 p {
+	margin-top: 0;
 }
 
 .col-1-5, .col-1-11, .col-1-7:last-child  {
